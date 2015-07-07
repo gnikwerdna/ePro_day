@@ -79,7 +79,7 @@ namespace ePro.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ComplianceItemsID,ItemName")] ComplianceItems complianceItems)
+        public ActionResult Edit([Bind(Include = "ComplianceItemsID,ItemName,EndItem")] ComplianceItems complianceItems)
         {
             if (ModelState.IsValid)
             {

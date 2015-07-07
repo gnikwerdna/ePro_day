@@ -214,6 +214,10 @@
     <Compile Include="DB\eprocontext\201507061116223_initialcreate4.Designer.cs">
       <DependentUpon>201507061116223_initialcreate4.cs</DependentUpon>
     </Compile>
+    <Compile Include="DB\eprocontext\201507070346054_initialcreate5.cs" />
+    <Compile Include="DB\eprocontext\201507070346054_initialcreate5.Designer.cs">
+      <DependentUpon>201507070346054_initialcreate5.cs</DependentUpon>
+    </Compile>
     <Compile Include="DB\eprocontext\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -375,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DB\eprocontext\201507061116223_initialcreate4.resx">
       <DependentUpon>201507061116223_initialcreate4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB\eprocontext\201507070346054_initialcreate5.resx">
+      <DependentUpon>201507070346054_initialcreate5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

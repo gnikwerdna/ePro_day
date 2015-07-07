@@ -93,6 +93,7 @@ namespace ePro.Controllers
                 ViewBag.ProductID = id.Value;
                 viewModel.ComplianceForms = viewModel.Products.Where(
                     i => i.ProductListingID == id.Value).Single().ComplianceForms;
+                ViewBag.IsEnd = db.Database.ExecuteSqlCommand(" select count(*) as EndItem from  ProductCompliances pc join  ComplianceItems ci on pc.complianceitemsid = ci.complianceitemsid where ProductListingID=" + id.ToString() + " and enditem=1");
             }
 
             if (complianceformID != null)
@@ -116,7 +117,8 @@ namespace ePro.Controllers
           
             var proditems = from a in db.ProductCompliance select a;
             ViewBag.ProdItems = new SelectList(proditems, "ProductListingID", "ProductName");
-
+            
+           
             return View(viewModel);
         }
 

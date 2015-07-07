@@ -99,6 +99,16 @@
                            @item.ComplianceItem.ItemName
                     
                         </td>
+                          <td>
+
+                              @item.ComplianceItem.EndItem
+                              
+                          </td>
+                          <td>
+
+
+                              @ViewBag.IsEnd
+                          </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.Description)
                         </td>
@@ -112,16 +122,17 @@
                                      
                                      if (a.Checked == 1)
                                      { 
-                                   
-                                       
+                                                                         
                                       @Html.ActionLink("Remove compliance", "Index", new { ComplianceFormID = item.ComplianceFormID, compid = item.ComplianceitemsID })
-                                       blnflag =false;
-                                    
+                                       blnflag = false;
+                                       
+                                        
+
                                      }
-                                    
+
                                      else
                                      {
-                                        
+
                                          intcounter++;
                                          blnflag = true;
 
@@ -138,11 +149,18 @@
                               }
 
                           </td>
-                        
+                         @if (item.ComplianceItem.EndItem == true && blnflag == false)
+                          {
+                          break;
+                          }
+
+
+                          
+                          
                         
                     </tr>
-                    }
-           
+        }
+
         }
     </table>
    
