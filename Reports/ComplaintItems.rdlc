@@ -6,10 +6,10 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>3.69062cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>6.945cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -25,7 +25,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Product Listing ID</Value>
+                              <Value> ID</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
                                 <FontSize>11pt</FontSize>
@@ -124,6 +124,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -176,29 +177,32 @@
             </TablixMember>
             <TablixMember>
               <Group Name="Details" />
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>CompliantItems</DataSetName>
         <Height>1.2cm</Height>
-        <Width>5cm</Width>
+        <Width>10.63562cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
-      <Subreport Name="SubComplianceItems">
-        <ReportName>SubComplianceItems</ReportName>
+      <Subreport Name="subcomp">
+        <ReportName>SubCompliant</ReportName>
         <Parameters>
-          <Parameter Name="ProductListingID">
+          <Parameter Name="ProdID">
             <Value>=First(Fields!ProductListingID.Value, "CompliantItems")</Value>
           </Parameter>
         </Parameters>
-        <Top>1.37639cm</Top>
-        <Left>0.47307cm</Left>
-        <Height>3.84292cm</Height>
-        <Width>15.04062cm</Width>
+        <Top>4.26035cm</Top>
+        <Left>0.84349cm</Left>
+        <Height>3.12854cm</Height>
+        <Width>14.32625cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -207,7 +211,7 @@
         </Style>
       </Subreport>
     </ReportItems>
-    <Height>4.19921in</Height>
+    <Height>4.57421in</Height>
     <Style />
   </Body>
   <Width>6.5in</Width>
