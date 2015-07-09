@@ -514,8 +514,8 @@
     <EmbeddedResource Include="DB\eprocontext\201507080405152_initialcreate3.resx">
       <DependentUpon>201507080405152_initialcreate3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ComplaintItems.rdlc" />
-    <EmbeddedResource Include="Reports\SubCompliant.rdlc" />
+    <EmbeddedResource Include="Reports\Products.rdlc" />
+    <EmbeddedResource Include="Reports\SubCompliance.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
