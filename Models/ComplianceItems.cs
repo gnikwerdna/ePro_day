@@ -11,7 +11,9 @@ namespace ePro.Models
 
         [Key]
         public int ComplianceItemsID { get; set; }
+         [Display(Name = "Item Name")]
         public string ItemName { get; set; }
+         [Display(Name = "End Item")]
         public bool EndItem { get; set; }
         public virtual ICollection<Compliance> Compliance { get; set; }
     }

@@ -10,8 +10,11 @@ namespace ePro.Models
     public class Compliance
     {
         [Key]
+        [Display(Name = "ID")]
         public int ComplinanceID { get; set; }
+        [Display(Name = "Compliance Form")]
         public int ComplianceFormID { get; set; }
+        [Display(Name = "Compliance ID")]
         public int ComplianceitemsID { get; set; }
         public string Description { get; set; }
         public virtual ComplianceForm ComplianceForm { get; set; }

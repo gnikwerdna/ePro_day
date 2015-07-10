@@ -12,6 +12,7 @@ namespace ePro.Models
         public int ComplianceFormID { get; set; }
         [StringLength(50, MinimumLength = 3)]
         public string Name { get; set; }
+        [Display(Name = "Compliance Category")]
         public int? ComplianceCategoryID { get; set; }
         public virtual ComplianceCategory ComplianceCategory { get; set; }
         public virtual ICollection<Compliance> Compliances { get; set; }
